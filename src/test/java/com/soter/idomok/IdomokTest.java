@@ -1,5 +1,7 @@
 package com.soter.idomok;
 
+import com.soter.Gomb;
+import com.soter.Hasab;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Method;
@@ -24,41 +26,41 @@ public class IdomokTest {
         assertTrue(abs, "a 'terfogat' metódus legyen abstract.");
     }
 
-//    @Test
-//    void testFajsuly(){
-//        assertEquals(0.75, FaIdom.getFajsuly());
-//    }
-//
-//    @Test
-//    void testGombTerfogat(){
-//        idom = new Gomb(1.0);
-//        assertEquals(4.188, idom.terfogat(), 0.001);
-//    }
-//
-//    @Test
-//    void testGombSuly(){
-//        idom = new Gomb(1.0);
-//        double d = idom.suly();
-//        assertEquals(3.141, idom.suly(), 0.001);
-//    }
-//
-//    @Test
-//    void testHasabTerfogat(){
-//        idom = new Hasab(1.0, 1.0, 1.0);
-//        assertEquals(1, idom.terfogat(), 0.001);
-//    }
-//
-//    @Test
-//    void testHasabSuly(){
-//        idom = new Hasab(1.0, 1.0, 1.0);
-//        assertEquals(0.75, idom.suly(), 0.001);
-//    }
-//
-//    @Test
-//    void testHasabParamSorrend(){
-//        Hasab hasab = new Hasab(1,2,3);
-//        assertEquals(1, hasab.getA());
-//        assertEquals(2, hasab.getB());
-//        assertEquals(3, hasab.getM());
-//    }
+    @Test
+    void testFajsuly(){
+        assertEquals(0.75, FaIdom.getFajsuly());
+    }
+
+    @Test
+    void testGombTerfogat(){
+        idom = new Gomb(1.0);
+        assertEquals(4.188, idom.terfogat(), 0.001);
+    }
+
+    @Test
+    void testGombSuly(){
+        idom = new Gomb(1.0);
+        double d = idom.suly();
+        assertEquals(3.141, idom.suly(), 0.001);
+    }
+
+    @Test
+    void testHasabTerfogat(){
+        idom = new Hasab(1.0, 1.0, 1.0);
+        assertEquals(1, idom.terfogat(), 0.001);
+    }
+
+    @Test
+    void testHasabSuly(){
+        idom = new Hasab(1.0, 1.0, 1.0);
+        assertEquals(0.75, idom.suly(), 0.001);
+    }
+
+    @Test
+    void testHasabParamSorrend(){
+        Hasab hasab = new Hasab(1,2,3);
+        assertEquals(1, hasab.getA());
+        assertEquals(2, hasab.getB());
+        assertEquals(3, hasab.getM());
+    }
 }

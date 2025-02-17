@@ -12,9 +12,28 @@ public abstract class FaIdom {
         this.b = b;
     }
 
+    public static double getFajsuly() {
+        return 0;
+    }
+
     public double terfogat() {
         return 0;
     }
 
+    public double suly() {
+        return 0;
+    }
+
+    public double getM() {
+        return m;
+    }
+
+    public double getA() {
+        return a;
+    }
+
+    public double getB() {
+        return b;
+    }
 }
 
